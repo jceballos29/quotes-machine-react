@@ -2,7 +2,6 @@ import {useState} from "react"
 import Data from "../quotes.json";
 import Quote from "./Quote"
 import Author from "./Author"
-// import ButtonChangeQuote from "./ButtonChangeQuote"
 import ButtonShareOnTwitter from "./ButtonShareOnTwitter"
 
 const QuoteBox = ({QuoteNumber,color,handleQuoteBox}) => {
@@ -24,7 +23,6 @@ const QuoteBox = ({QuoteNumber,color,handleQuoteBox}) => {
             <ButtonShareOnTwitter quote={quote} author={author} color={color} />
             <Quote handleButtonChange={handleButtonChange} quote={quote} />
             <Author author={author} />
-            {/* <ButtonChangeQuote  handleButtonChange={handleButtonChange} color={color}/> */}
         </div>
     ); 
 }

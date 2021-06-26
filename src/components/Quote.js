@@ -1,4 +1,3 @@
-// import {Fragment} from "react";
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import {faAngleDoubleLeft,faAngleDoubleRight} from "@fortawesome/free-solid-svg-icons"
 import randomNumber from "../functions/randomNumber";
