@@ -10,16 +10,16 @@
 .QuoteBox {
   width: 680px;
   height: 350px;
-  background-color:  #f5f5f5 ;
+  background-color: #f5f5f5;
   padding: 30px;
   border-radius: 20px;
   display: grid;
   align-items: center;
-  justify-content:center;
+  justify-content: center;
   grid-template-columns: 1fr;
   grid-template-rows: repeat(6, 1fr);
   grid-column-gap: 0px;
-  grid-row-gap: 0px; 
+  grid-row-gap: 0px;
   box-shadow: 0px 0px 15px rgb(0, 0, 0, 0.5);
 }
 
@@ -29,18 +29,17 @@
   grid-template-columns: repeat(7, 1fr);
   grid-template-rows: 1fr;
   grid-column-gap: 0px;
-  grid-row-gap: 0px; 
+  grid-row-gap: 0px;
   align-items: center;
   margin: 10px 0px;
 }
 
 .Quote p {
-  grid-area: 1 / 2 / 2 / 7; 
+  grid-area: 1 / 2 / 2 / 7;
   font-size: 1.2rem;
   text-align: center;
   font-weight: 300;
   margin: 0px 20px;
-
 }
 
 .icon {
@@ -50,8 +49,8 @@
 }
 
 .Author {
-  grid-area: 6 / 1 / 6 / 2; 
-  display: flex;  
+  grid-area: 6 / 1 / 6 / 2;
+  display: flex;
   align-items: center;
   justify-content: center;
 }
@@ -65,7 +64,6 @@
   display: flex;
   justify-content: flex-end;
   display: none;
-
 }
 
 .ButtonShareOnTwitter {
@@ -73,7 +71,7 @@
   font-size: 2rem;
   cursor: auto;
   display: flex;
-  justify-content: flex-start;
+  justify-content: flex-end;
   border: none;
   cursor: auto;
   background: none;
