@@ -1,16 +1,25 @@
-import './App.css';
+import {useState} from "react"
+import './style.css';
 import data from "./quotes.json";
-
+import randomNumber from "./functions/randomNumber";
+import randomColor from "./functions/randomColor";
 import QuoteBox from "./components/QuoteBox";
+
 
 function App() {
 
-  const {quote,author} = data.quotes[0]
+  let firstColor = randomColor();
+  let QuoteNumber = randomNumber(data.quotes.length);
 
-  console.log(quote,author);
+  let [color,setColor] = useState(firstColor);
+  let style = { color: color, backgroundColor: color}
+
+  const handleQuoteBox = (newColor) => {
+    setColor(newColor)
+  };
   return (
-    <div className="App">
-      <QuoteBox quote={quote} author={author}/>
+    <div className="App" style={style}>
+      <QuoteBox QuoteNumber={QuoteNumber} color={color} handleQuoteBox={handleQuoteBox}/>
     </div>
   );
 }

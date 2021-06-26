@@ -5,13 +5,11 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color:    #00838f  ;
-  color:   #00838f   ;
 }
 
 .QuoteBox {
-  width: 600px;
-  height: 250px;
+  width: 680px;
+  height: 350px;
   background-color:  #f5f5f5 ;
   padding: 30px;
   border-radius: 20px;
@@ -21,27 +19,33 @@
   grid-template-columns: 1fr;
   grid-template-rows: repeat(6, 1fr);
   grid-column-gap: 0px;
-  grid-row-gap: 5px; 
+  grid-row-gap: 0px; 
   box-shadow: 0px 0px 15px rgb(0, 0, 0, 0.5);
 }
 
 .Quote {
   grid-area: 2 / 1 / 5 / 2;
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  grid-template-rows: 1fr;
+  grid-column-gap: 0px;
+  grid-row-gap: 0px; 
   align-items: center;
   justify-content: space-evenly;
+  margin: 10px 0px;
 }
 
 .Quote p {
-  font-size: 1.3rem;
+  grid-area: 1 / 2 / 2 / 7; 
+  font-size: 1.2rem;
   text-align: center;
   font-weight: 300;
-
+  margin: 0px 20px;
 
 }
 
 .icon {
-  font-size: 3rem;
+  font-size: 4rem;
 }
 
 .Author {
@@ -49,10 +53,12 @@
   display: flex;  
   align-items: center;
   justify-content: center;
+  /* margin: 10px 0px; */
 }
 
 .Author h4 {
-  margin: 0px 10px;
+  /* margin: 0px 10px; */
+  padding: 0px 10px;
 }
 
 .ButtonChangeQuote {
@@ -63,12 +69,12 @@
 
 .ButtonChangeQuote button {
   border: none;
-  background-color:  #00838f;
   border-radius: 5px;
   padding: 5px 10px;
   color: white;
   cursor: pointer;
   opacity: 0.9;
+
 }
 
 .ButtonChangeQuote button:hover {
@@ -80,7 +86,7 @@
   font-size: 2rem;
   cursor: pointer;
   display: flex;
-  justify-content: end;
+  justify-content: flex-end;
   text-align: right;
   opacity:0.9;
 }
