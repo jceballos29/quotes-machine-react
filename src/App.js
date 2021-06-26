@@ -1,4 +1,4 @@
-import {useState} from "react"
+import { useState } from "react"
 import './style.css';
 import data from "./quotes.json";
 import randomNumber from "./functions/randomNumber";
@@ -11,15 +11,15 @@ function App() {
   let firstColor = randomColor();
   let QuoteNumber = randomNumber(data.quotes.length);
 
-  let [color,setColor] = useState(firstColor);
-  let style = { color: color, backgroundColor: color}
+  let [color, setColor] = useState(firstColor);
+  let style = { color: color, backgroundColor: color }
 
   const handleQuoteBox = (newColor) => {
     setColor(newColor)
   };
   return (
     <div className="App" style={style}>
-      <QuoteBox QuoteNumber={QuoteNumber} color={color} handleQuoteBox={handleQuoteBox}/>
+      <QuoteBox QuoteNumber={QuoteNumber} color={color} handleQuoteBox={handleQuoteBox} />
     </div>
   );
 }
