@@ -24,14 +24,13 @@
 }
 
 .Quote {
-  grid-area: 2 / 1 / 5 / 2;
+  grid-area: 2 / 1 / 6 / 2;
   display: grid;
   grid-template-columns: repeat(7, 1fr);
   grid-template-rows: 1fr;
   grid-column-gap: 0px;
   grid-row-gap: 0px; 
   align-items: center;
-  justify-content: space-evenly;
   margin: 10px 0px;
 }
 
@@ -45,19 +44,19 @@
 }
 
 .icon {
+  justify-self: center;
   font-size: 4rem;
+  cursor: pointer;
 }
 
 .Author {
-  grid-area: 5 / 1 / 6 / 2; 
+  grid-area: 6 / 1 / 6 / 2; 
   display: flex;  
   align-items: center;
   justify-content: center;
-  /* margin: 10px 0px; */
 }
 
 .Author h4 {
-  /* margin: 0px 10px; */
   padding: 0px 10px;
 }
 
@@ -65,27 +64,14 @@
   grid-area: 6 / 1 / 7 / 2;
   display: flex;
   justify-content: flex-end;
+  display: none;
 
-}
-
-.ButtonChangeQuote button {
-  border: none;
-  border-radius: 5px;
-  padding: 5px 10px;
-  color: white;
-  cursor: pointer;
-  opacity: 0.9;
-  font-size: 18px;
-  text-transform: uppercase;
-}
-
-.ButtonChangeQuote button:hover {
-  opacity: 1;
 }
 
 .ButtonShareOnTwitter {
   grid-area: 1 / 1 / 2 / 2;
   font-size: 2rem;
+  cursor: auto;
   display: flex;
   justify-content: flex-start;
   border: none;

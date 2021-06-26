@@ -1,6 +1,6 @@
 import { useState } from "react"
 import './style.css';
-import data from "./quotes.json";
+import Data from "./quotes.json";
 import randomNumber from "./functions/randomNumber";
 import randomColor from "./functions/randomColor";
 import QuoteBox from "./components/QuoteBox";
@@ -9,7 +9,7 @@ import QuoteBox from "./components/QuoteBox";
 function App() {
 
   let firstColor = randomColor();
-  let QuoteNumber = randomNumber(data.quotes.length);
+  let QuoteNumber = randomNumber(Data.quotes.length);
 
   let [color, setColor] = useState(firstColor);
   let style = { color: color, backgroundColor: color }
