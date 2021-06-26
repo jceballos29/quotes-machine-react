@@ -86,15 +86,16 @@
 .ButtonShareOnTwitter {
   grid-area: 1 / 1 / 2 / 2;
   font-size: 2rem;
-  cursor: pointer;
   display: flex;
   justify-content: flex-start;
   border: none;
+  cursor: auto;
   background: none;
 }
 
 .twitter {
   opacity: 0.6;
+  cursor: pointer;
 }
 
 .twitter:hover {
