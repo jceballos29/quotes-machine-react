@@ -89,12 +89,14 @@
   cursor: pointer;
   display: flex;
   justify-content: flex-start;
-  text-align: right;
-  opacity:0.9;
   border: none;
   background: none;
 }
 
-.ButtonShareOnTwitter:hover {
+.twitter {
+  opacity: 0.6;
+}
+
+.twitter:hover {
   opacity: 1;
 }
