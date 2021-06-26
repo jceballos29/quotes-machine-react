@@ -9,16 +9,15 @@ const ButtonShareOnTwitter = ({quote,author,color}) => {
 
 
     return (
-        <div className="ButtonShareOnTwitter">
         <a 
+            className="ButtonShareOnTwitter"
             style={style} 
             href={url}
             target='_blank'
             rel="noreferrer"
         >
-            <FontAwesomeIcon icon={faTwitterSquare}/>
+            <FontAwesomeIcon className="twitter" icon={faTwitterSquare}/>
         </a>
-        </div>
     );
 }
 

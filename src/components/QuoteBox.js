@@ -1,18 +1,20 @@
 import {useState} from "react"
-import data from "../quotes.json";
+import Data from "../quotes.json";
 import Quote from "./Quote"
 import Author from "./Author"
-import ButtonChangeQuote from "./ButtonChangeQuote"
+// import ButtonChangeQuote from "./ButtonChangeQuote"
 import ButtonShareOnTwitter from "./ButtonShareOnTwitter"
 
 const QuoteBox = ({QuoteNumber,color,handleQuoteBox}) => {
 
-    let [quote,setQuote] = useState(data.quotes[QuoteNumber].quote)
-    let [author,setAuthor] = useState(data.quotes[QuoteNumber].author)
+    let Quotes = Data.quotes;
+
+    let [quote,setQuote] = useState(Quotes[QuoteNumber].quote);
+    let [author,setAuthor] = useState(Quotes[QuoteNumber].author);
 
     const handleButtonChange = (nextQuote,newColor) => {
-        setQuote(data.quotes[nextQuote].quote);
-        setAuthor(data.quotes[nextQuote].author);
+        setQuote(Quotes[nextQuote].quote);
+        setAuthor(Quotes[nextQuote].author);
         handleQuoteBox(newColor);   
     }
   
@@ -20,9 +22,9 @@ const QuoteBox = ({QuoteNumber,color,handleQuoteBox}) => {
     return  (
         <div className="QuoteBox">
             <ButtonShareOnTwitter quote={quote} author={author} color={color} />
-            <Quote quote={quote} />
+            <Quote handleButtonChange={handleButtonChange} quote={quote} />
             <Author author={author} />
-            <ButtonChangeQuote  handleButtonChange={handleButtonChange} color={color}/>
+            {/* <ButtonChangeQuote  handleButtonChange={handleButtonChange} color={color}/> */}
         </div>
     ); 
 }
