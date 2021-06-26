@@ -15,7 +15,7 @@ const randomColor = () => {
       " #ca6f1e",
       " #ba4a00",
     ];
-    let num = Math.floor(Math.random() * (colors.length + 1));
+    let num = Math.floor(Math.random() * (colors.length));
     return colors[num];
   };
 
