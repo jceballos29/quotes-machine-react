@@ -19,7 +19,7 @@ const QuoteBox = ({QuoteNumber,color,handleQuoteBox}) => {
 
     return  (
         <div className="QuoteBox">
-            <ButtonShareOnTwitter />
+            <ButtonShareOnTwitter quote={quote} author={author} color={color} />
             <Quote quote={quote} />
             <Author author={author} />
             <ButtonChangeQuote  handleButtonChange={handleButtonChange} color={color}/>
