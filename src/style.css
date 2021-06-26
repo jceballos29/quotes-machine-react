@@ -64,6 +64,7 @@
 .ButtonChangeQuote {
   grid-area: 6 / 1 / 7 / 2;
   display: flex;
+  justify-content: flex-end;
 
 }
 
@@ -74,7 +75,8 @@
   color: white;
   cursor: pointer;
   opacity: 0.9;
-
+  font-size: 18px;
+  text-transform: uppercase;
 }
 
 .ButtonChangeQuote button:hover {
@@ -86,7 +88,7 @@
   font-size: 2rem;
   cursor: pointer;
   display: flex;
-  justify-content: flex-end;
+  justify-content: flex-start;
   text-align: right;
   opacity:0.9;
   border: none;
